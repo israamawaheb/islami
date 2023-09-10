@@ -1,4 +1,4 @@
-package com.example.islami.ui.splash
+package com.example.islami.splash
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
@@ -6,7 +6,7 @@ import android.os.Bundle
 import android.os.Handler
 import android.os.Looper
 import com.example.islami.R
-import com.example.islami.u.home.HomeActivity
+import com.example.islami.home.HomeActivity
 
 class SplashActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {

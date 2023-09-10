@@ -1,4 +1,4 @@
-package com.example.islami.u.home
+package com.example.islami.home
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
@@ -7,10 +7,10 @@ import android.view.MenuItem
 import androidx.fragment.app.Fragment
 import com.example.islami.R
 import com.example.islami.databinding.ActivityHomeBinding
-import com.example.islami.u.home.tabs.hadeth.HadethFragment
-import com.example.islami.u.home.tabs.quran.QuranFragment
-import com.example.islami.u.home.tabs.radio.RadioFragment
-import com.example.islami.u.home.tabs.tasbeh.TasbehFragment
+import com.example.islami.home.tabs.hadeth.HadethFragment
+import com.example.islami.home.tabs.quran.QuranFragment
+import com.example.islami.home.tabs.radio.RadioFragment
+import com.example.islami.home.tabs.tasbeh.TasbehFragment
 import com.google.android.material.navigation.NavigationBarView
 
 class HomeActivity : AppCompatActivity() {

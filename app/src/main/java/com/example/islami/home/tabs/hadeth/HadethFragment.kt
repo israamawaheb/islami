@@ -1,4 +1,4 @@
-package com.example.islami.u.home.tabs.hadeth
+package com.example.islami.home.tabs.hadeth
 
 import android.os.Bundle
 import android.view.LayoutInflater

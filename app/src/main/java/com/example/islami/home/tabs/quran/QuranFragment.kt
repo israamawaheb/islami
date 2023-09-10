@@ -1,4 +1,4 @@
-package com.example.islami.u.home.tabs.quran
+package com.example.islami.home.tabs.quran
 
 import android.content.Intent
 import android.os.Bundle

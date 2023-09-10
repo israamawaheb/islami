@@ -1,4 +1,4 @@
-package com.example.islami.u.home.tabs.radio
+package com.example.islami.home.tabs.tasbeh
 
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -7,16 +7,17 @@ import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import com.example.islami.databinding.FragmentHadethBinding
 import com.example.islami.databinding.FragmentRadioBinding
+import com.example.islami.databinding.FragmentTasbehBinding
 
-class RadioFragment:Fragment() {
-    lateinit var viewBinding: FragmentRadioBinding
+class TasbehFragment:Fragment() {
+    lateinit var viewBinding: FragmentTasbehBinding
 
     override fun onCreateView(
         inflater: LayoutInflater,
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        viewBinding= FragmentRadioBinding.inflate(inflater,container,false)
+        viewBinding= FragmentTasbehBinding.inflate(inflater,container,false)
         return viewBinding.root
     }
 
