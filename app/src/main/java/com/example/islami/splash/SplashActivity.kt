@@ -18,7 +18,7 @@ class SplashActivity : AppCompatActivity() {
 
     private fun StartHomeActivity() {
         Handler(Looper.getMainLooper()).postDelayed({
-            var intent = Intent(this, HomeActivity::class.java)
+            var intent = Intent(this,HomeActivity::class.java)
             startActivity(intent)
 
         },2000)
