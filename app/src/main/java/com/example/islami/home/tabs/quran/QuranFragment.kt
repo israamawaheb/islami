@@ -1,11 +1,14 @@
 package com.example.islami.home.tabs.quran
 
+import android.content.Intent
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.recyclerview.widget.RecyclerView
+import com.example.islami.Constants
+import com.example.islami.chapterDetails.ChapterDetailsActivity
 import com.example.islami.databinding.FragmentHadethBinding
 import com.example.islami.databinding.FragmentQuranBinding
 
@@ -44,8 +47,19 @@ class QuranFragment:Fragment() {
 
     private fun initRecycleview() {
         adapter= ChapterNamesRecycleAdapter(names)
-        adapter.onnItemClickListener= ChapterNamesRecycleAdapter.onItemClickListener { position, name -> }
+        adapter.onnItemClickListener= ChapterNamesRecycleAdapter.onItemClickListener { position, name ->
+          startChapterDetailsScreen(position,name)
+
+        }
             viewBinding.recycleView.adapter=adapter
+
+    }
+
+    private fun startChapterDetailsScreen(index: Int, name: String) {
+               val intent = Intent(context,ChapterDetailsActivity::class.java)
+               intent.putExtra(Constants.EXTRE_CHAPTER_NAME,name)
+               intent.putExtra(Constants.EXTRE_CHAPTER_INDEX,index)
+               startActivity(intent)
 
     }
 }
