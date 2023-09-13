@@ -35,6 +35,6 @@ class ChapterNamesRecycleAdapter(private val names:List<String>):RecyclerView.Ad
 
     var onnItemClickListener:onItemClickListener?=null
      fun interface onItemClickListener{
-        fun onItemClick(position: Int,name :String)
+        fun onItemClick(position: Int,names:String)
     }
 }
