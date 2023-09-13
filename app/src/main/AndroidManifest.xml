@@ -28,6 +28,8 @@
 
         <activity android:name=".chapterDetails.ChapterDetailsActivity"
             android:exported="false"/>
+        <activity android:name=".hadethDetails.HadethDetailsActivity"
+            android:exported="false"/>
 
     </application>
 
