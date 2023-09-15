@@ -10,5 +10,6 @@
     <color name="transparent">#00f44338</color>
     <color name="color_primary">#B7935F</color>
     <color name="color_primary_dark">#574936</color>
+    <color name="color_primary_light">#C7B295</color>
 
 </resources>
